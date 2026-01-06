@@ -1,0 +1,21 @@
+replicaCount: 2
+
+image:
+  repository: 730335609957.dkr.ecr.us-east-1.amazonaws.com/solar-ci-nodejs
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3000
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
+
+env:
+  mongoSecretName: mongo-secrets
