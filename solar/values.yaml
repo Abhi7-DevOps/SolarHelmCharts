@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: 730335609957.dkr.ecr.us-east-1.amazonaws.com/solar-ci-nodejs
+  repository: 576282838775.dkr.ecr.us-east-1.amazonaws.com/solar-ci-nodejs
   tag: latest
   pullPolicy: IfNotPresent
 
